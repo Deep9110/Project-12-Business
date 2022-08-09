@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Oswald:wght@200;700&family=Raleway:wght@700&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background:#6A7681;
+    width:100%;
+    height: 100vh;
+}
+.header-section{
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    padding: 30px 5%;
+    font-family: "poppins", sans-serif;
+}
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav-links{
+    display:flex;
+    text-align: center;
+    list-style: none;
+}
+.nav-links li{
+    display: inline-block;
+    padding: 10px 30px;
+}
+.nav-links li a{
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+.nav-links li a:hover{
+    color:aquamarine;
+}
+.header-section a button {
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    background: #6A7681;
+    color: #fff;
+    cursor: pointer;
+}
+.header-section a button:hover{
+    color:aquamarine;
+    border: 1px solid aquamarine;
+}
+
+.hero{
+    margin:1rem;
+    padding: 0rem 5%;
+    display:flex;
+    align-items:center;
+    
+}
+.image1{
+    width: 520px;
+    height: 500px;
+    overflow: hidden;
+    margin: 1rem;
+}
+.image1 img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: center;
+}
+
+.header-content{
+    height: 500px;
+    width: 700px;
+    display:flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
+}
+.header-content h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    color: #fff;
+}
+.header-content p{
+    font-family: 'poppins', sans-serif;
+    color: rgb(194, 194, 194);
+    margin: 2rem 0rem;
+}
+
+.email-section{
+    height: 60px;
+    width: 450px;
+    border:1px solid #fff;
+    background: white;
+    display:flex;
+    justify-content: space-between;
+    
+}
+.email-section input{
+    width: 70%;
+    border:none;
+    
+}
+button{
+    padding: 15px 30px;
+    border: 1px solid #fff;
+    background: #3d7e4fcf;
+    color: #fff;
+    cursor: pointer; 
+    font-size: 14px;
+    
+}
+.email-section a{
+    margin: 5px;
+}
+
+/* main-section */
+
+.connect{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 30px 7.5%;
+}
+.connect-header{
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    padding: 1.5rem 0rem;
+}
+.count{
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;width: 100%;
+    margin: 2rem 1rem;
+    padding: 1rem;
+}
+.counting{
+    width: 150px;
+    height: 100px;
+    /* border: 1px solid black; */
+    /* padding: 20px;
+    margin: 15px; */
+    font-family: 'poppins', sans-serif;
+
+}
+.counting span{
+    font-size: 50px;
+    font-weight: 700;   
+}
+.counting p{
+    padding: 15px 0px;
+}
+
+.image2{
+    width:85vw;
+    height: 700px;
+    overflow: hidden;
+}
+
+.image2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.product-section{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 7.5%;
+}
+
+.product-header{
+    text-align: center;
+    padding: 15px;
+}
+.product-header h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+}
+
+.products{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem 0rem;
+}
+.content-left{
+    width: 45%;
+}
+.content-left h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 45px;
+}
+.content-left p{
+    font-family: 'poppins', sans-serif;
+    padding: 1.5rem 0rem;
+    line-height: 2rem;
+}
+.content-right{
+    width: 55%;
+}
+.image-right{
+    width: 580px;
+    height: 530px;
+    overflow: hidden;
+    float: right;
+}
+.image-right img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: center;
+    
+}
+.image4{
+    width: 580px;
+    height: 530px;
+    overflow: hidden;
+    float: left;
+}
+.image4 img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: center; 
+}
+
+/* team-section */
+
+.team-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px 7.5%;
+}
+.team-heading{
+    display: flex;
+    justify-content:space-between;
+}
+.team-heading-1 h3{
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+.team-content p{
+    font-size: 18px;
+    font-family: 'poppins', sans-serif;
+    color:#6A7681;
+    line-height: 2rem;
+    padding: 0rem 3rem;
+}
+
+.all-profile{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3rem 0rem;
+}
+.profile{
+    display:flex;
+    flex-direction: column;
+    
+}
+.profile-image{
+    height: 400px;
+    width: 350px;
+    overflow: hidden;
+}
+.profile-image img{
+    width: 100%;
+    object-fit:cover;
+    object-position: center;
+}
+.profile h4{
+    font-family:'Raleway', sans-serif;
+    padding: 15px 0px;
+    font-size: 20px;
+}
+.profile p{
+    font-family: 'poppins', sans-serif;
+    color:rgba(52, 54, 56, 0.937)
+}
+
+.team-section a {
+    text-align: center;
+}
+.team-section a button{
+    font-size: 18px;
+    padding: 18px 35px;
+}
+
+/* Footer */
+
+footer{
+    background-color: #0b1520;
+    color: #fff;
+    
+    width: 100%;
+    padding: 30px 7.5%;
+}
+.icons{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 0rem;
+}
+.categories{
+    padding: 2rem 0rem;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.resourses{
+    padding: 1rem 0rem;
+    line-height: 3rem;
+}
+.resourses h3{
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+.resourses p{
+    font-size: 16px;
+    font-family: 'poppins', sans-serif;
+    color:#7b7f84ed;
+}
+
+hr{
+    height:1px; 
+    width:100%; 
+    border-width:0; 
+    color:rgb(47, 41, 41); 
+    background-color:rgb(64, 61, 61);
+}
