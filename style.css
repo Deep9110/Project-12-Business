@@ -8,7 +8,7 @@
 header{
     background:#6A7681;
     width:100%;
-    height: 100vh;
+    height: auto;
 }
 .header-section{
     display: flex;
@@ -74,11 +74,9 @@ header{
 }
 
 .header-content{
-    height: 500px;
-    width: 700px;
-    display:flex;
+    width:50%;
     flex-direction: column;
-    padding: 2rem 3rem;
+    justify-content: center;
 }
 .header-content h1{
     font-family: 'Raleway', sans-serif;
@@ -143,9 +141,6 @@ button{
 .counting{
     width: 150px;
     height: 100px;
-    /* border: 1px solid black; */
-    /* padding: 20px;
-    margin: 15px; */
     font-family: 'poppins', sans-serif;
 
 }
@@ -170,6 +165,7 @@ button{
     object-position: center;
 }
 
+/* Product section */
 .product-section{
     display:flex;
     flex-direction: column;
@@ -191,9 +187,12 @@ button{
     align-items: center;
     justify-content: space-around;
     padding: 3rem 0rem;
+    gap:0.5rem;
 }
+
 .content-left{
-    width: 45%;
+    width: 50%;
+    align-items: center;
 }
 .content-left h3{
     font-family: 'Raleway', sans-serif;
@@ -205,13 +204,13 @@ button{
     line-height: 2rem;
 }
 .content-right{
-    width: 55%;
+
 }
 .image-right{
     width: 580px;
     height: 530px;
     overflow: hidden;
-    float: right;
+    
 }
 .image-right img{
     width: 100%;
@@ -220,21 +219,6 @@ button{
     object-position: center;
     
 }
-.image4{
-    width: 580px;
-    height: 530px;
-    overflow: hidden;
-    float: left;
-}
-.image4 img{
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-    object-position: center; 
-}
-
-/* team-section */
-
 .team-section{
     display: flex;
     flex-direction: column;
@@ -264,7 +248,8 @@ button{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 3rem 0rem;
+    padding: 2.5rem 0rem;
+    gap:0.5rem;
 }
 .profile{
     display:flex;
@@ -302,9 +287,12 @@ button{
 /* Footer */
 
 footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
     background-color: #0b1520;
     color: #fff;
-    
     width: 100%;
     padding: 30px 7.5%;
 }
@@ -319,6 +307,7 @@ footer{
     display: flex;
     align-items:center;
     justify-content: space-between;
+    gap:2rem;
 }
 .resourses{
     padding: 1rem 0rem;
@@ -340,4 +329,108 @@ hr{
     border-width:0; 
     color:rgb(47, 41, 41); 
     background-color:rgb(64, 61, 61);
+}
+
+
+/* media queries */
+
+@media only screen and (max-width:768px){
+    .nav-links{
+        display: none;
+    }
+    .hero{
+        flex-direction: column;
+    }
+    .image1{
+        width:350px;
+        height:350px;
+    }
+    .mail{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+    .header-content{
+        text-align: center;
+        width:100%;
+    }
+    .header-content h1{
+        font-size:35px;
+    }
+    .email-section{
+        width:350px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+    button{
+        padding:10px 25px;
+        
+    }
+
+    .connect-header{
+        font-size: 35px;
+    }
+
+    .product-header{
+        font-size: 35px;
+    }
+    .products{
+        flex-direction: column-reverse;    
+    }
+    .image-right{
+        height: 350px;
+        width:350px;  
+    }
+    
+    .content-left{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .content-left h3{
+        font-size: 30px;
+    }
+    .content-right{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        /* width: 100%; */
+    }
+    
+    .team-section{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .team-heading{
+        flex-direction: column;
+        text-align: center;
+    }
+    .all-profile{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer{
+
+    }
+    .icons{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding:1rem 0rem;
+        gap:0.5rem;
+    }
+    .categories{
+        padding:1rem 0rem;
+        flex-direction: column;
+        gap:0.5rem;
+    }
+    .resourses{
+        text-align: center;
+    }
 }
